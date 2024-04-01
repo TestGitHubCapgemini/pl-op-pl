@@ -251,10 +251,10 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://psa-customerfirst--hotfix.sandbox.my.salesforce.com',
-			'https://psa-customerfirst--hotfix.sandbox.my.site.com/citroen',
+			'https://psa-customerfirst--preprod.sandbox.my.salesforce.com',
+			'https://psa-customerfirst--preprod.sandbox.my.site.com/citroen',
 			gslbBaseURL,
-			'00D1x000000KYS3',
+			'00D1x000000KYSu',
 			'ES_Chat_Citroen',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
@@ -269,7 +269,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://psa-customerfirst--hotfix.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://psa-customerfirst--preprod.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
